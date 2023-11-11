@@ -6,15 +6,15 @@ const router = createRouter({
     routes: [
         {
             path: '/',
+            name: 'login',
+            component: () => import('@/views/Login.vue')
+        },
+        {
+            path: '/dash',
             component: AppLayout,
             children: [
                 {
-                    path: 'pages/auth/login',
-                    name: 'login',
-                    component: () => import('@/views/pages/auth/Login.vue')
-                },
-                {
-                    path: '/',
+                    path: '/dash',
                     name: 'dashboard',
                     component: () => import('@/views/Dashboard.vue')
                 },

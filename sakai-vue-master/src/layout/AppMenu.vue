@@ -7,8 +7,8 @@ const model = ref([
     {
         label: 'Menú',
         items: [
-            { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
-            { label: 'Lotes de café', icon:'pi pi-fw pi-box', to: '/uikit/message'}
+            { label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/dash' },
+            { label: 'Terrenos y lotes', icon:'pi pi-fw pi-box', to: '/uikit/message'}
         ]
     },
     {
@@ -23,39 +23,39 @@ const model = ref([
             { label: 'Usuarios', icon: 'pi pi-fw pi-users', to: '/uikit/list' }
         ]
     },
-    {
-        label: 'Pages',
-        icon: 'pi pi-fw pi-briefcase',
-        to: '/pages',
-        items: [
-            {
-                label: 'Auth',
-                icon: 'pi pi-fw pi-user',
-                items: [
-                    {
-                        label: 'Login',
-                        icon: 'pi pi-fw pi-sign-in',
-                        to: '/auth/login'
-                    },
-                    {
-                        label: 'Error',
-                        icon: 'pi pi-fw pi-times-circle',
-                        to: '/auth/error'
-                    },
-                    {
-                        label: 'Access Denied',
-                        icon: 'pi pi-fw pi-lock',
-                        to: '/auth/access'
-                    }
-                ]
-            },
-            {
-                label: 'Crud',
-                icon: 'pi pi-fw pi-pencil',
-                to: '/pages/crud'
-            }
-        ]
-    }
+    // {
+    //     label: 'Pages',
+    //     icon: 'pi pi-fw pi-briefcase',
+    //     to: '/pages',
+    //     items: [
+    //         {
+    //             label: 'Auth',
+    //             icon: 'pi pi-fw pi-user',
+    //             items: [
+    //                 {
+    //                     label: 'Login',
+    //                     icon: 'pi pi-fw pi-sign-in',
+    //                     to: '/auth/login'
+    //                 },
+    //                 {
+    //                     label: 'Error',
+    //                     icon: 'pi pi-fw pi-times-circle',
+    //                     to: '/auth/error'
+    //                 },
+    //                 {
+    //                     label: 'Access Denied',
+    //                     icon: 'pi pi-fw pi-lock',
+    //                     to: '/auth/access'
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             label: 'Crud',
+    //             icon: 'pi pi-fw pi-pencil',
+    //             to: '/pages/crud'
+    //         }
+    //     ]
+    // }
 ]);
 </script>
 

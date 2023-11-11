@@ -41,6 +41,7 @@ const openWindow = () => {
                     currentPageReportTemplate="Visualiando {last} de {totalRecords} lotes en recolección"
                     responsiveLayout="scroll">
                     <Column field="" header="Codigo de recolección" :sortable="true" style="width:50px"></Column>
+                    <Column filed="" header="Número de Lote" style="width:80px"></Column>
                     <Column field="" header="Fecha" style="width:100px"></Column>
                     <Column field="" header="Cafe verde" style="width:120px"></Column>
                     <Column field="" header="Cafe Maduro" style="width:120px"></Column>
@@ -58,8 +59,15 @@ const openWindow = () => {
                         </template>
                     </Column>
                 </DataTable>
-                <Dialog v-model:visible="productDialog" :style="{ width: '450px' }" header="Proceso de recolección"
-                    :modal="true" class="p-fluid"></Dialog>
+                <Dialog v-model:visible="productDialog" :style="{ width: '1500px' }" header="Proceso de recolección"
+                    :modal="true" class="p-fluid">
+
+                    <div class="field col-12 md:col-3">
+                            <Dropdown id="state" v-model="dropdownItem" :options="dropdownItems" optionLabel="name"
+                                placeholder="Seleccionar el nombre del terreno"></Dropdown>
+                        </div>
+
+                </Dialog>
             </div>
         </div>
     </div>
