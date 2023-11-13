@@ -222,9 +222,10 @@ export default {
     <div class="grid">
         <div class="col-12">
             <div class="card">
+                <div class="card">
                 <h3>Sección de los terrenos</h3>
                 <Toast />
-                <Toolbar class="col-2">
+                <Toolbar class="col-3">
                     <template v-slot:start && #body="slotProps">
                         <div class="my-2">
                             <Button label="Nuevo Terreno" icon="pi pi-plus" class="p-button-success mr-2"
@@ -246,15 +247,15 @@ export default {
                         <template #body="slotProps">
                             <Button icon="pi pi-pencil" type="button" class="p-button-success p-mr-2 p-mb-1"
                                 @click="openWindowUpdate(slotProps.data)"></Button>
-                            <Button icon="pi pi-trash" type="button" class="p-button-danger p-mb-1" @click="deleteTerreno(slotProps.data)"></Button>
+                            <Button icon="pi pi-trash" type="button" class="p-button-danger p-mb-1"
+                                @click="deleteTerreno(slotProps.data)"></Button>
                         </template>
                     </Column>
                 </DataTable>
-                <hr>
+            </div>
                 <!-- PARTE DEL TEMPLETE DONDE EMPIEZA LA CODIFICACIÓN DE LA VISTA DE LOS LOTES DE CAFÉ  -->
                 <div class="card">
                     <h3>Sección de los lotes del café</h3>
-
                     <Toast />
                     <Toolbar class="col-3">
                         <template v-slot:start && #body="slotProps">
@@ -278,8 +279,10 @@ export default {
                                 Acciones
                             </template>
                             <template #body="slotProps">
-                                <Button icon="pi pi-pencil" type="button" class="p-button-success p-mr-2 p-mb-1" @click="openWindowUpdateL(slotProps.data)"></Button>
-                                <Button icon="pi pi-trash" type="button" class="p-button-danger p-mb-1" @click="deleteLote(slotProps.data)"></Button>
+                                <Button icon="pi pi-pencil" type="button" class="p-button-success p-mr-2 p-mb-1"
+                                    @click="openWindowUpdateL(slotProps.data)"></Button>
+                                <Button icon="pi pi-trash" type="button" class="p-button-danger p-mb-1"
+                                    @click="deleteLote(slotProps.data)"></Button>
                             </template>
                         </Column>
                     </DataTable>
@@ -333,8 +336,8 @@ export default {
                     </div>
                 </Dialog>
                 <!--   VENTANAS MODALES PARA EL METODO UPDATE  -->
-                <Dialog v-model:visible="updateLote" :style="{ width: '500px' }"
-                    header="Actualizar los datos del terreno." modal="true" class="p-fluid">
+                <Dialog v-model:visible="updateLote" :style="{ width: '500px' }" header="Actualizar los datos del terreno."
+                    modal="true" class="p-fluid">
                     <div class="field">
                         <label for="name">Tipo de grano: </label>
                         <InputText id="name" v-model="tipograno" />
@@ -348,5 +351,4 @@ export default {
                 </Dialog>
             </div>
         </div>
-    </div>
-</template>
+    </div></template>
