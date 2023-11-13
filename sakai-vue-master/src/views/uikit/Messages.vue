@@ -116,7 +116,7 @@ export default {
                 try {
                     const response = await axios.post('http://localhost:3000/CreateLoteCafe', { //llamada a la REST API
                         tipograno: this.typeG,
-                        numterreno: this.numberL,
+                        numterreno: this.numberT,
                     });
                     console.log('Respuesta:', response.data);
                     this.$toast.add({ severity: 'success', summary: 'Lote ingresado de manera exitosa', detail: '¡Todo bien!', life: 5000 });
@@ -125,6 +125,10 @@ export default {
                     this.$toast.add({ severity: 'warn', summary: 'El lote deseado no se ha podido registrar :( )', detail: '¡Probleas internos!', life: 5000 });
                 }
             }
+            //método con el cual se realiza la recarga de la pagina
+            setTimeout(() => {
+                location.reload();
+            }, 2000); //dos segundos convertidos en milisegundos
         },
         async deleteTerreno(row) {
             try {
