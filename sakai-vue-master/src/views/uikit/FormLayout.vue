@@ -36,6 +36,7 @@ export default {
         }
     },
     mounted() {
+        this.selectCrearRecoleccion();
 
     },
     methods: {
@@ -71,6 +72,7 @@ export default {
                     cant2: this.cla2,
                     cant3: this.cla3,
                     cant4: this.cla4,
+                    fecha: this.fce,
                 });
                 this.$toast.add({ severity: 'success', summary: 'Recolección cargada de manera exitosa', detail: '¡Todo bien!', life: 1000 });
                 console.log('Respuesta de actualización btn:', response.data);
@@ -138,7 +140,7 @@ export default {
                     responsiveLayout="scroll">
                     <Column field="id" header="Codigo de recolección" :sortable="true" style="width:50px"></Column>
                     <Column field="lte" header="Número de Lote" style="width:50px"></Column>
-                    <Column field="fce" header="Fecha" format="dd-MM-yyyy" style="width:100px"></Column>
+                    <Column field="fec" header="Fecha" style="width:100px" ></Column>
                     <Column field="cla_1" header="Cafe verde" style="width:120px"></Column>
                     <Column field="cla_2" header="Cafe Maduro" style="width:120px"></Column>
                     <Column field="cla_3" header="Cafe sobremaduro" style="width:120px"></Column>

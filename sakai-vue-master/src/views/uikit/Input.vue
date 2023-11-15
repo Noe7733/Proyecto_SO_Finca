@@ -28,10 +28,11 @@ export default {
         }
     },
     mounted() {
+        this.viewDataTableDespul();
 
     },
     methods: {
-        async getAllDespulpados(){
+        async getAllDespulpados(){ 
             axios({
                 method: 'POST',
                 url: 'http://localhost:3000/tablaPrincDespul',
@@ -67,7 +68,7 @@ export default {
                 this.$toast.add({ severity: 'success', summary: 'Despulpado exitoso', detail: '¡Todo bien!', life: 1000 });
                 console.log('Respuesta de actualización btn:', response.data);
             } catch (error) {
-                console.error('Error al hacer la solicitud PUT:', error);
+                console.error('Error al hacer la solicitud POT:', error);
                 this.$toast.add({ severity: 'warn', summary: 'Despulpado fallido :( ', detail: '¡Probleas internos!', life: 1000 });
             }
             setTimeout(() => {
@@ -79,7 +80,7 @@ export default {
             try {
                 const response = await axios.put(`http://localhost:3000/actStsDespul/${row.iddespulpado}`, {
                 });
-                this.$toast.add({ severity: 'success', summary: 'Despulpado exitoso', detail: '¡Todo bien!', life: 1000 });
+                this.$toast.add({ severity: 'success', summary: 'Truncado exitoso', detail: '¡Todo bien!', life: 1000 });
                 console.log('Respuesta de actualización btn:', response.data);
             } catch (error) {
                 console.error('Error al hacer la solicitud PUT:', error);
@@ -92,8 +93,6 @@ export default {
         }
     }
 };
-
-
 </script>
 
 <template>
