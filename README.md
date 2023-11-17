@@ -1,4 +1,4 @@
-#Proyecto_SO_Finca
+
 <h3>Proyecto integrador del 7mo D</h3>
 <br>
 <h3>Unidades academicas involucradas: </h3>
