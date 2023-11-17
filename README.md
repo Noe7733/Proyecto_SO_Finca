@@ -1,12 +1,12 @@
+#Proyecto_SO_Finca
 <h3>Proyecto integrador del 7mo D</h3>
-
-<h3>Unidades academicas involucradas: </h3>
 <br>
+<h3>Unidades academicas involucradas: </h3>
 <h4>Sistemas Operativos</h4>
 <h4>Desarrollo De Aplicaciones Web Y Móviles</h4>
 <h4>Computo Forense</h4>
 <h4>Inteligencia Artificial</h4>
-
+<br>
 ## Colaboradores
 
 - [@Alvaro-najera](https://github.com/Alvaro-najera)
