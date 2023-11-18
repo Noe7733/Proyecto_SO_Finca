@@ -9,9 +9,9 @@
 <br>
 ## Colaboradores
 
-- [@Alvaro-najera](https://github.com/Alvaro-najera)
-- [@alvaraduo](https://github.com/alvaraduo)
-- [@Victhor12](https://github.com/Victhor12)
-- [@Jeannette-Sanchez11](https://github.com/Jeannette-Sanchez11)
-- [@Noe7733](https://github.com/Noe7733)
+- [@Alvaro Nájera Verdugo](https://github.com/Alvaro-najera)
+- [@Alejandro Gomez Alvarado](https://github.com/alvaraduo)
+- [@Victor Manuel Aguilar Cruz](https://github.com/Victhor12)
+- [@Jeannette Sánchez Hernández](https://github.com/Jeannette-Sanchez11)
+- [@Noé Guillen Gerardo](https://github.com/Noe7733)
 
